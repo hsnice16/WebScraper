@@ -11,7 +11,7 @@ results = soup.find("ol", {"id": "b_results"})
 links = results.find_all("li", {"class": "b_algo"})
 
 for item in links:
-    item_text = item.find("a").text;
+    item_text = item.find("a").text
     item_href = item.find("a").attrs["href"]
 
     if item_text and item_href:
